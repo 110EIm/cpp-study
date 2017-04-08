@@ -44,6 +44,24 @@ int main() {
     v4.pop_back();
     print_vector(v4);
 
+    v3.pop_back();
+    cout << endl;
+
+    v4.clear();
+    cout << "size : " << v4.size() << endl;
+
+    v4.push_back(1);
+    v4.push_back(2);
+    v4.push_back(3);
+    v4.push_back(4);
+
+    for(auto it = v4.begin(); it != v4.end(); it++) {
+        cout << "v4[" << (it - v4.begin()) << "] = " << it[0] << endl;
+    }
+
+    auto ptr = v4.begin();
+    v4.insert(ptr, 100);
+    print_vector(v4);
 
     return 0;
 }

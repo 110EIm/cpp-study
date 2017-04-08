@@ -3,5 +3,5 @@ project(cpp_programming)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(SOURCE_FILES 02.seq_container/vector.cpp)
+set(SOURCE_FILES 02.seq_container/list.cpp)
 add_executable(cpp_programming ${SOURCE_FILES})
